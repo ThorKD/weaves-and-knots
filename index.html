@@ -8,7 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <style>.image-suit { background-image: url('assets/noor-chanderi-set.png'); }</style>
+    <style>
+      .image-suit { background-image: url('assets/noor-chanderi-set.png'); }
+      .contact-block { grid-column: 1 / -1; justify-self: stretch; display: flex; justify-content: space-between; align-items: end; gap: 28px; padding: 26px 0 28px; margin-top: 22px; border-top: 1px solid var(--line); font-family: 'DM Mono', monospace; }
+      .contact-intro span, .contact-numbers small { display:block; color:#68706c; font-size:10px; letter-spacing:.08em; text-transform:uppercase; }
+      .contact-intro p { margin:8px 0 0; font:500 20px 'Playfair Display', serif; letter-spacing:-.03em; }
+      .contact-numbers { display:flex; gap:11px; }
+      .contact-numbers a { min-width:182px; padding:11px 12px 10px; border:1px solid var(--line); display:grid; grid-template-columns:1fr auto; gap:5px; font-size:12px; transition:.2s ease; }
+      .contact-numbers small { grid-column:1/-1; font-size:9px; }
+      .contact-numbers b { font-size:15px; font-weight:400; line-height:12px; }
+      .contact-numbers a:hover { background:var(--ink); color:var(--paper); border-color:var(--ink); transform:translateY(-2px); }
+      @media(max-width:760px){.contact-block{grid-column:1;display:block;margin-top:17px;padding:22px 0;}.contact-intro p{font-size:19px}.contact-numbers{margin-top:17px;display:grid;grid-template-columns:1fr 1fr;gap:8px}.contact-numbers a{min-width:0;font-size:10px;padding:10px}.contact-numbers small{font-size:8px}}
+    </style>
   </head>
   <body>
     <div class="announcement">Complimentary shipping across India on orders over ₹5,000 <span>✦</span> Woven slowly, sent with care</div>
@@ -103,7 +114,10 @@
       <a class="wordmark" href="#top">Weaves <i>&</i> Knots</a>
       <p>Crafted in India, treasured everywhere.</p>
       <div class="footer-links"><a href="#instagram">Instagram</a><a href="#care">Care guide</a></div>
-      <div class="contact-block" id="contact"><span>Contact us</span><a href="tel:+919650306587">+91 96503 06587</a><a href="tel:+919773818013">+91 97738 18013</a></div>
+      <div class="contact-block" id="contact">
+        <div class="contact-intro"><span>Contact us</span><p>Need a hand choosing a weave?</p></div>
+        <div class="contact-numbers"><a href="tel:+919650306587"><small>Call us</small>+91 96503 06587 <b>↗</b></a><a href="tel:+919773818013"><small>Call us</small>+91 97738 18013 <b>↗</b></a></div>
+      </div>
       <small>© 2024 Weaves & Knots</small>
     </footer>
     <script src="script.js"></script>
