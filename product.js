@@ -1,3 +1,6 @@
+document.title = document.title.replace('Weaves & Knots', 'Tanisha Weaves & Knots');
+document.querySelectorAll('.wordmark').forEach((mark) => { mark.innerHTML = 'Tanisha Weaves <i>&</i> Knots'; mark.style.fontSize = window.innerWidth < 760 ? '15px' : '20px'; });
+
 let quantity = 1;
 const quantityLabel = document.querySelector('#quantity');
 const bagCount = document.querySelector('#bag-count');

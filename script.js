@@ -1,3 +1,6 @@
+document.title = 'Tanisha Weaves & Knots — Handloom, held close';
+document.querySelectorAll('.wordmark').forEach((mark) => { mark.innerHTML = 'Tanisha Weaves <i>&</i> Knots'; mark.style.fontSize = window.innerWidth < 760 ? '15px' : '20px'; });
+
 let bagCount = 0;
 const bagCountElement = document.querySelector('#bag-count');
 const cartDrawer = document.querySelector('#cart-drawer');
