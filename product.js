@@ -1,5 +1,6 @@
 document.title = document.title.replace('Weaves & Knots', 'Tanisha Weaves & Knots');
 document.querySelectorAll('.wordmark').forEach((mark) => { mark.innerHTML = '<img src="assets/tanisha-logo.png" alt="Tanisha Weaves & Knots" style="display:block;width:140px;height:62px;object-fit:contain;object-position:center;">'; });
+document.querySelectorAll('.indigo-image').forEach((image) => { image.style.backgroundImage = "linear-gradient(0deg, rgba(9,19,28,.12), rgba(9,19,28,.02)), url('assets/jamdani-journal.png')"; });
 
 let quantity = 1;
 const quantityLabel = document.querySelector('#quantity');
